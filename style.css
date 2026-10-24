@@ -1,0 +1,170 @@
+/* стили основных элементов */
+body {
+    font-family: "Roboto Flex", sans-serif;
+    font-weight:lighter;
+    background-color: #0D1703;
+    margin: 0;
+    min-height: 255vh;
+    padding-bottom: 50px; 
+}
+
+h1, h2, h3 {
+    font-family: Merriweather, serif;
+    font-style: italic;
+}
+
+h1 {
+    font-size: 45px;
+    color: #fff;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+/* оформление меню */
+header {
+    background-color: #CEEDB2;
+    color: #fff;
+    padding-top: 20px;
+    padding: 10px 0;
+    margin-bottom: 30px;
+}
+
+.container {
+ max-width: 1190px;
+ padding: 0 15px; 
+ margin: 0 auto; 
+}
+
+.header__inner {
+ display: flex; 
+ justify-content: space-between; 
+ align-items: center;
+}
+
+.menu__list {
+ display: flex; 
+ list-style: none; /* убрать стандартные маркеры (чёрные точки) */
+}
+
+.menu__list-item {
+ margin-right: 20px; 
+}
+
+/* другие полезные классы */
+.center {
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.photo {
+    width: 400px;
+    height: auto;
+}
+
+.text {
+    font-family: "Roboto Flex", sans-serif;
+    padding: 20px;
+    margin: 0 20px;
+    color: #fff;
+    border-radius: 10px;
+    flex: 1;
+}
+
+/* оформление колонок */
+.textcols {
+	white-space: nowrap;
+}
+
+.textcols_photo {
+	width: 200px;
+    height: auto;
+}
+
+.textcols-item {
+	white-space: normal;	
+	display: inline-block;
+	width: 30%;
+	vertical-align: top;
+	background: #0D1703;
+	margin-right: 5%;
+	font-size: 15px;
+}
+
+.textcols .textcols-item:last-child {
+	margin-right: 0 ;
+}
+
+/* оформление ссылок */
+a {
+ text-decoration: none;
+ color: #0D1703;
+}
+
+.menu a:visited {
+    color: #0D1703;
+}
+
+a:visited {
+    color: #CEEDB2;
+}
+
+/* слайдер фото */
+.slider {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  overflow-x: auto;            
+  scroll-snap-type: x mandatory; /* прилипание по оси X */
+  scroll-behavior: smooth;     
+  width: 400px;
+  max-width: 100%;
+  aspect-ratio: 1 / 1.414; /* фиксируем пропорции  */
+}
+
+.slider__item {
+  margin-left: auto;
+  margin-right: auto;
+  flex: 0 0 100%;           
+  scroll-snap-align: start; /* точка прилипания у начала слайда */
+}
+
+.slider__item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* кнопки */
+.useful_links {
+    text-align: center;
+}
+
+.useful_links a {
+    display: inline-block;
+    width: 150px;
+    margin: 10px;
+    padding: 7px 100px;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 30px;
+    outline: 1px solid #CEEDB2;
+    transition: background-color 0.3s ease;
+}
+
+.useful_links a:hover {
+    background-color: rgba(206, 237, 178, 0.3);
+}
+
+/* стили подвала */
+footer {
+    color: #CEEDB2;
+    background-color: rgba(206, 237, 178, 0.3);
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
